@@ -1,0 +1,30 @@
+{
+  "name": "bjss-basket",
+  "version": "0.0.1",
+  "description": "Simple basket - BJSS coding test",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm -s i && npm run lint && npm test && npm install -g",
+    "lint": "./node_modules/jshint/bin/jshint ./**/*.js",
+    "test": "npm run lint && ./node_modules/mocha/bin/mocha \"test/**/*.spec.js\"",
+    "start": "node src/index.js"
+  },
+  "bin": {
+    "PriceBasket": "src/index.js"
+  },
+  "keywords": [
+    "BJSS",
+    "coding",
+    "test"
+  ],
+  "author": "David Turnbull",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "jshint": "^2.9.4",
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
